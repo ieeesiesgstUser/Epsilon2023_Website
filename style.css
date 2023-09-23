@@ -1,0 +1,666 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+
+
+body {
+    background-color: #010101;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #788994;
+    overflow-x: hidden;
+  }
+
+
+a {
+    text-decoration: none !important;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s all !important;
+}
+a:hover {
+    color: #ffea97;
+}
+section {
+    margin: 150px 0px;
+}
+
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+.social-links li {
+    margin: 10px;
+}
+
+/* Default styles for the footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+/* Styles for large screens (desktops and laptops) */
+@media (min-width: 992px) {
+    .footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer h3 {
+        font-size: 24px;
+    }
+}
+
+/* Styles for medium screens (tablets) */
+@media (max-width: 991px) {
+    .footer .container {
+        flex-direction: column;
+    }
+}
+
+/* Styles for small screens (mobile devices) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer h3 {
+        font-size: 20px;
+    }
+}
+.copyright{
+    align-items: center;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    /* background: radial-gradient(ellipse at top, rgb(1 1 1 / 69%), #010101 69%) , url(./assets/BG.png); */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 125px;
+}
+.Logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    z-index: 40;
+    position: relative;
+}
+.Logos:after {
+    content: "";
+    width: 3px;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.4), transparent);
+    display: block;
+    position: absolute;
+    animation: RaoIsWow 2s normal forwards ease-in-out;
+    animation-delay: 1.5s;
+}
+@keyframes RaoIsWow {
+    from {
+        opacity: 0;
+        height: 0%;
+    }
+    to {
+        opacity: 1;
+        height: 100%;
+    }
+}
+.Logos img:nth-child(1) {
+    margin-right: 60px;
+}
+.Year {
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    margin: 75px 0px 50px;
+    z-index: 40;
+    position: relative;
+}
+.RegisterBlock {
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+a.RegisterLink {
+    display: block;
+    width: fit-content;
+    background: linear-gradient(0deg, #0063BE, #0043A7);
+    padding: 14px 150px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    letter-spacing: 4px;
+    font-weight: 800;
+}
+a.RegisterLink:hover {
+    padding-top: 30px;
+}
+
+
+#Cesium {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    left: 0;
+    top: 35%;
+    z-index: 0;
+    opacity: 0.6;
+    transform: scale(2);
+}
+
+.Globe:after {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    background: linear-gradient(90deg, rgb(1 1 1) 15%, rgb(1 1 1 / 0%), rgb(1 1 1) 85%) , radial-gradient(ellipse at bottom, rgb(1 1 1) 15% ,rgb(1 1 1 / 69%) 45%, rgb(1 1 1 / 0%)100%);
+    content: "";
+    display: block;
+}
+.Globe {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.container.Timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    z-index: 40;
+    position: relative;
+}
+.Time {
+    text-align: center;
+}
+.Time h2 {
+    font-weight: 800;
+    color: #fff;
+    font-size: 64px;
+}
+.Time h4 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: dimgrey;
+    letter-spacing: 4px;
+}
+
+
+
+
+
+
+.AboutRow {
+    display: Flex;
+    gap: 30px;
+}
+.AboutText {
+    width: 50%;
+}
+.AboutEvent {
+    width: 50%;
+    background: #151515;
+    height: 300px;
+    display: block;
+    border-radius: 10px;
+}
+.AboutText b {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+
+.container1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	/* background: #161616; */
+	min-height: 100vh;
+}
+
+section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+/* 	background: linear-gradient(#DA22FF, #9733EE); */
+	clip-path: circle(30% at right 70%);
+}
+
+section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+/* 	background: linear-gradient(#E55D87, #5FC3E4); */
+	clip-path: circle(20% at 10% 10%);
+}
+
+.Tracks {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0px 0;
+}
+
+.Tracks .card {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px 55px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.Tracks .card:hover{
+    box-shadow: 0px 15px 20px rgba(0, 99, 190,0.9)
+
+}
+.Tracks .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+
+.Tracks .card:hover .content {
+	transform: translateY(-20px);
+    
+    
+}
+
+.Tracks .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.Tracks .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.Tracks .card .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.Tracks .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.Tracks .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.Tracks .card .sci li {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.Tracks .card:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+    /* box-shadow: 0px 15px 20px rgba(0, 99, 190,0.6) */
+}
+
+.Tracks .card .sci li a {
+	color: #fff;
+	font-size: 20px;
+}
+
+
+
+
+.container.Calendar {
+    background: #151515;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+.container.Calendar .Day {
+    width: 100%;
+}
+.container.Calendar .Day:nth-child(even) {
+    background: rgba(0, 0, 0, 0.20);
+}
+.DayInfo {
+    padding: 41px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: grid;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.DayInfo h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+.Independence {
+    position: relative;
+    overflow: hidden;
+}
+.Independence h3 {
+    letter-spacing: 5px;
+}
+.Independence:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(90deg, orange, white 33%,blue 50%,white 57%,green);
+    display: block;
+    left: 0;
+    top: -100px;
+    filter: blur(35px);
+    border-radius: 100px;
+    opacity: 0.2;
+    background-size: 400% 400%;
+    animation: IndiMintDay 20s ease infinite;
+}
+@keyframes IndiMintDay {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+
+
+.DayTimeline {
+    display: grid;
+    gap: 75px;
+    margin-bottom: 100px;
+    padding: 0px 50px;
+}
+.CalendarEvent {
+    position: relative;
+    padding-left: 25px;
+}
+.CalendarEvent:before {
+    width: 6px;
+    height: 135%;
+    display: block;
+    content: "";
+    position: absolute;
+    background: #66747e;
+    border-radius: 100px;
+    margin-left: -25px;
+}
+.Break {
+    color: #66747e;
+    opacity: 0.5;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.EventName {
+    font-weight: 800;
+    color: #fff;
+}
+.EventTime {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+.EventSpeaker {
+    font-size: medium;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+.DayTimeline.NormalHoliday h2 {
+    text-align: center;
+    font-weight: 800;
+    color: rgba(102,116,126,0.5);
+}
+.DayTimeline.Holiday h2 {
+    text-align: center;
+    font-weight: 800;
+    color: #fff;
+}
+.orange, .DayTimeline.Holiday h2:nth-child(1), .DayTimeline.Holiday h2:nth-child(2), .DayTimeline.Holiday h2:nth-child(3) {
+    color: orange;
+}
+
+.green, .DayTimeline.Holiday h2:nth-child(5), .DayTimeline.Holiday h2:nth-child(6), .DayTimeline.Holiday h2:nth-child(7) {
+    color: rgb(15, 194, 15);
+}
+.CalendarEvent a {
+    background: rgba(102,116,126,0.05);
+    border: 2px solid rgba(102,116,126,0.2);
+    padding: 6px 12px;
+    display: block;
+    width: fit-content;
+    border-radius: 6px;
+    font-size: small;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #66747e;
+}
+.CalendarEvent a:hover {
+    color: #fff;
+    background: rgba(102,116,126,0.1);
+    border: 2px solid rgba(102,116,126,0.2);
+}
+
+
+@media (max-width: 786px) {
+
+
+    
+    .Logos {
+        gap: 0px !important;
+    }
+    .Logos img, .AboutImg {
+        width: 100% !important;
+    }
+    .Time h2 {
+        font-size: 32px !important;
+    }
+    .Time h4 {
+        font-size: 14px !important;
+    }
+    .AboutRow {
+        flex-direction: column-reverse !important;
+    }
+    .AboutEvent , .AboutText {
+        width: 100% !important; 
+    }
+    .container.Calendar {
+        flex-direction: column !important;
+    }
+    main {
+        margin-top: -200px;
+        z-index: 10000;
+        position: relative;
+    }
+    .container.Timer {
+        gap: 15px;
+        justify-content: center !important;
+    }
+    a.RegisterLink {
+        padding: 14px 100px !important;
+    }
+}
+
+.card {
+    background-color: #0950a1;
+    transition: transform 0.3s;
+    color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.sponsor-tile {
+    border-radius: 10px;
+    border: 5px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+.sponsor-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.sponsors {
+    display: flex;
+    max-width: 1440px;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+  }
+  .sponsor-title{
+    font-size: 18px;
+  }
+  #sponsors,
+  #previous-sponsors {
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 50px 0;
+  }
+  .sponsor-container .card p {
+    font-family: "Space Grotesk", sans-serif;
+    margin-top: 5px;
+  }
+  .sponsor-container {
+    justify-content: center;
+    flex-direction: row !important;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  #previous-sponsors .email {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: normal;
+    color: #fff;
+  }
+  #previous-sponsors .email span,
+  #previous-sponsors .email span a,
+  .official-website {
+    text-decoration: underline;
+    color: #c1cae8;
+  }
+  
+  .card {
+    background-color: transparent !important;
+    border: none !important;
+    align-items: center;
+  }
+  
+  .sponsor-image {
+    mix-blend-mode: screen;
+    width: 240px;
+  }
+  
+  .AboutImg{
+    width: 50%;
+    position: relative;
+  }
+.AboutImg img{
+    width: 100%;
+}
+
+ 
