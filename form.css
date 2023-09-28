@@ -1,203 +1,195 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-image: url("./images/Background\ Darkened.png");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+* {
+  /* @import url(); */
+  font-family: 'Montserrat', sans-serif;
+    /* background-color: black; */
+    box-sizing: border-box;
+  }
+  
+  body {
+
+    background-color:#020815;
+    font-family: 'Montserrat', sans-serif;
+    widtH: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+
+  body, input, textarea, button {
+    font-family: "Raleway", sans-serif;
+  }
+  .banner-box{
+    background-image: url("./assets/Banner\ \(WiE\ Logo\ Updated\).png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-}
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: auto; */
-    height: 100vh;
-    color: rgb(245, 249, 252);
     
-}
-#form-Container{
+  }
+  .center {
+    background-color: white;
+    widtH: 100%;
+    max-width: 840px;
+    padding: 20px;
+    /* box-shadow: rgb(154, 62, 62) 0px 20px 30px -10px; */
+    /* box-shadow: rgba(232, 64, 64, 0.25) 0px 13px 27px -5px, rgba(209, 38, 38, 0.3) 0px 8px 16px -8px; */
+    /* box-shadow: rgba(238, 8, 8, 0.25) 0px 25px 50px -12px; */
+    box-shadow: rgba(255, 88, 4, 0.7) 0px 22px 70px 4px;
+    box-shadow: rgba(255, 88, 4, 0.5) 0px 13px 27px -5px, rgba(255, 88, 4, 0.9) 0px 8px 16px -8px;
+    /* box-shadow: rgba(255, 88, 4, 0.8) 0px 2px 4px, rgba(255, 88, 4, 0.8) 0px 7px 13px -3px, rgba(255, 88, 4, 0.8) 0px -3px 0px inset; */
+    box-shadow: rgba(241, 8, 8, 1) 0px 5px 15px;
+  }
+  
+  .signUp {
     display: flex;
-    flex-direction: column;
-    width: 45vw;
-    /* background-color: rgba(209, 197, 234, 0.443); */
-    justify-content: center;
-    align-items: center;
-    padding: 3em;
-    margin-top: 8px;
-    /* background-image: url("splash.jpeg"); */
-    background-size: 100% 100%;
-    /* border: 2px solid rgb(20, 3, 1); */
-    /* box-shadow: 6px 6px 5px rgb(68, 61, 61); */
-
-}
-#form-body{
-    width: 70%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto ;
-
-}
-h2{
-    color: #eee8e4;
-}
-.input-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 2vw 8px;
-}
-label{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.2rem;
-    /* text-shadow: 4px 4px rgb(39, 2, 75); */
-}
-input{
-    width: 14vw;
-    height: 3.5vh;
-    margin: 0.5em ;
-    margin-left: 0;
-    border:2px solid black;
+    widtH: 100%;
+    transition: 0.5s ease-in-out;
     border-radius: 5px;
-    font-size: 17px;
-
-}
-#option-box{
+  }
+  .signUp.close {
+    transform: translate(-25%, 0);
+  }
+  .signUp .left, .signUp .right {
+    width: 50%;
+    padding: 80px 20px;
+  }
+  @media (max-width: 640px) {
+    .signUp .left, .signUp .right {
+      width: 100%;
+    }
+ 
+  }
+  .signUp .left {
     display: flex;
-    width: 170%;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-#in-rd{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1em;
-}
-input[type="submit"]{
-    width: 18vw;
-    margin: 2px;
-    background-color: #FF5E0C;
-    color:#eee8e4;
-   font-family: cursive;
-
-}
-input[type="radio"]{
-    width: 10vw;
-}
-/* h1{
-    color:rgb(232, 230, 219);
-} */
-#hd-box{
-    width: 92%;
-    height: 15vh;
-    opacity: 1.5;
-    background-image: url("./images/Banner\ \(WiE\ Logo\ Updated\).png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-bottom: 15px;
-}
-.wrap{
-    width: 120px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.s{
-    width: 75px;
-    height: 45px;
-    /* font-family: ; */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none; 
-}
-.s:hover{
-    background-color: #FF5E0C; 
-    box-shadow: 0px 15px 20px rgba(255,94,12,0.4);
-    color: #fff;
-    transform: translateY(-7px);
-
+    z-index: 2;
+    text-align: center;
+    background-image: url("assets/Background\ Darkened.png");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transform-origin: center right;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .signUp .left .back {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
     
-}
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(180);
+    z-index: -1;
+  }
+  .signUp .left.close {
+    transform: rotateY(-180deg);
+    transition: 1s ease-in-out;
+  }
+  .signUp .left.close .back {
+    transform: rotateY(0);
+    transition: 1s ease-in-out;
+  }
+  .signUp .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
+  }
+  .signUp .right form {
+    width: 100%;
+  }
+  .signUp .right input[type=text],
+  .signUp .right input[type=email],
+  .signUp .right input[type=password] {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .signUp .right input[type=text].first,
+  .signUp .right input[type=email].first,
+  .signUp .right input[type=password].first {
+    margin-top: 0;
+  }
+  .signUp .right input[type=submit] {
+    padding: 10px 40px;
+    border: 2px solid rgb(255, 88, 4);
+    background: white;
+    color: #FF5E0C;
+    transition: 0.15s ease-in-out;
+    border-radius: 5px;
+    outline: none;
+  }
+  .signUp .right input[type=submit]:hover {
+    background: #FF5E0C;
+    color: black;
+  }
+  .signUp .right .input-bordered {
+    width: 100%;
+    position: relative;
+  }
+  .signUp .right .input-bordered.active label {
+    top: 0;
+    left: 0;
+    transform: translate(0, -50%) scale(0.75);
+    color: #008c9e;
+  }
+  .signUp .right .input-bordered.active:after {
+    width: 100%;
+  }
+  .signUp .right .input-bordered:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #008c9e;
+    position: absolute;
+    bottom: 0;
+    transition: 0.15s ease-in-out;
+  }
+  .signUp .right .input-bordered label {
+    color: #444;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    transition: 0.15s ease-in-out;
+    cursor: text;
+    transform-origin: center left;
+  }
 
-/* responsive */
-/* mobiles */
-@media  screen and (max-width:500px) {
-    main{
-        height: auto;
-    }
-    #form-Container{
-        width: 80vw;
-        margin-top: 15px;
-    }
-    #form-body{
-        grid-template-columns: auto;
-        justify-items: center;
-        align-items: center;
-        /* margin-top: 15px; */
-    }
-    .input-box{
-        justify-content: center;
-        align-items: center;
-        margin: 10px;
-    }
-    input{
-        width: 45vw;
-        margin: 8px;
-    }
-    input[type="submit"]{
-        width: 40vw;
-        margin: 10px;
-    }
-    label{
-        text-align: center;
-    }
-    #hd-box{
-        width: 85vw;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-    h2{
-        font-size: 160%;
-        text-align: center;
-    }
+
+.banner-box{
+  width: 500px;
+  height: 100px;
 }
-@media screen and (min-width:500px) and (max-width:900px) {
-    #form-Container{
-        width: 75vw;
-        margin-top: 10px;
+  
+  /* mobiles */
+  @media (max-width: 640px) {
+    .banner-box{
+      width: 100vw;
     }
-    #form-body{
-        width: 108%;
-        justify-content: center;
-        margin-top: 8px;
+  }
+  @media (max-width:950px) and (min-width:650px) {
+    .banner-box{
+      width: 105vw;
     }
-    .input-box{
-        justify-content: center;
-        align-items: center;
-        margin: 15px;
-    }
-    input{
-        width: 35vw;
-        margin: 15px;
-    }
-    input[type="submit"]{
-        width: 35vw;
-        margin: 5px;
-    }
-    label{
-        text-align: center;
-        font-size: 1.1rem;
-    }
-}
+  }
